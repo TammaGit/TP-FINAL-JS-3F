@@ -3,9 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> ADOGta</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
 </head>
 <body>
-    
+    <header>
+        <section class="box1">
+            <h1>ADOGta</h1>   
+        </section>
+        <section class="box2">
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#adopciones">Adopciones</a></li>
+                        <li><a href="#formularioSuscripcion">Contacto</a></li>
+                        <li><a href=""><button class="btn-iniciar-sesion">Iniciar sesión</button></a></li>
+                        <li><a href=""><button class="btn-registrarse">Registrarse</button></a></li>
+                    </ul>              
+                </nav>  
+            <!--<img src="./img/labrador png.png" alt="perrito patitas" >--> 
+        </section>
+    </header>
+
+    <main>
+<!-- ------------------------HERO -->           
+        <section class="secHero">
+            <div class="imagenHero">
+            </div>
+            <div class="textoHero" id="textoHero">
+                <h2>¡Dales una segunda oportunidad!</h2>
+                <p>Adoptá, apadriná o ayudá como voluntario. Todo suma.</p>
+            </div>
+        </section>
+<!-- ------------------------QUIENES SOMOS NOSOTROS --------------------------->   
+        <section class="nosotros" id="nosotros">
+            <h2>¿Quiénes somos?</h2>
+            <p><strong>Somos una organización sin fines de lucro dedicada al rescate, cuidado y reubicación responsable de perros abandonados. Nuestro objetivo es ofrecerles una segunda oportunidad de vida y conectarlos con familias que estén dispuestas a darles amor, cuidado y un hogar para siempre.
+            Trabajamos con voluntarios, veterinarios y hogares de tránsito que nos ayudan día a día a cambiar la vida de estos peluditos. Creemos que cada perro merece una vida digna y feliz. ¡Sumate a nuestra causa! </strong></p>
+        </section>
+
+<!-- .........................FIN Quiene somos................. --> 
+<!-- -------PERRITOS QUE BUSCAN FAMILIA----- -------> 
+        <section class="adopciones" id="adopciones">
+            <h2>Perritos en adopción</h2>
+            <div class="card-container" id="cards"></div>
+        </section>
+<!-- ....................FIN Perritos que buscan famialia......---> 
+<!-- -------FORMULARIO ADOPCION/VOLUNTARIADO/DONACIÓN----- -------> 
+        <section class="secFormulario"><div class="box"></div>
+            <section class="sec1">
+                <div class="formularioSuscripcion" id="formularioSuscripcion">
+                    <h2>¡Sumate a nuestra causa!</h2>
+                    <form class="formularioContacto" id="formularioContacto">
+                        <div class="inputContainer">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Mi nombre" required>
+                        </div>
+                        <div class="inputContainer">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Mi apellido" required>
+                        </div>
+                        <div class="inputContainer"> 
+                            <label for="numero">N° de celular</label>
+                            <input type="number" id="numero" name="numero" placeholder="Mi n° de celular" required>
+                        </div>
+                        <div class="inputContainer">
+                            <label for="email">Dirección de email</label>
+                            <input type="email" id="email" name="emai" placeholder="@mail.com..." required>    
+                        </div>
+                        <input type="submit" value="Enviar" class="btn-suscribirme" id="btn-enviar">
+                    </form>
+                </div>
+            </section> 
+            <section class="sec2">
+                <div class="form-info">
+                <p>¡Sumate a nuestra misión! Podés ayudarnos de muchas maneras: donando tu tiempo como voluntario, apadrinando a un perrito o simplemente difundiendo nuestra causa. Completá este formulario y te contactaremos para contarte cómo podés hacer la diferencia en la vida de un animal que te necesita. Cada pequeño gesto suma... y cambia una vida.</p>
+                </div>    
+            </section>               
+        </section>
+<!-- ......FIN Formulario adopcion/voluntariado/donacion.-->        
+    </main>
+    <footer class="Piedepagina">
+        <section class="grupo1">
+            <div class="contacto">
+                <h2>Nuestras oficinas</h2>
+                <p>Avenida SiempreViva 724, Sprinfield</p>
+                <p></p>
+                <p>Tel: +34 678 108 404 546 297 </p>
+                <p>contacto@ADOGta.com</p>
+            </div>
+            <div class="interes">
+                <h2>Secciones</h2>
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#adopciones">Adopciones</a></li>
+                    <li><a href="#formularioSuscripcion">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h2>Síguenos</h2>
+                <div class="red-social">
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-tiktok"></i>
+                </div>
+            </div>
+        </section> 
+<!-- ------COPYRIGHS Y ESAS COSAS--------------------->          
+        <section class="grupo2">
+            <small> &copy; 2025 <b>ADOGta.com</b> - Todos los derechos reservados.</small>
+        </section>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

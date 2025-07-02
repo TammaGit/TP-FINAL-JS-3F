@@ -1,0 +1,309 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --color-primario:#5f33d8;
+    --color-secundario:#c0b233;
+    --color-terciario:#f3f4f5;
+    --color-cuarto:#070707;
+    --color-quinto:#9e277a;
+}
+/* ----------------------------HEADER--------------------- */
+header{
+    background-color: var(--color-primario);
+    color: var(--color-terciario); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .box1{
+    font-size: 30px;
+    padding: 4vh;
+    /*gap: 120vh;*/
+}
+header .box2 .img{
+    display: flex;
+    justify-content: flex-end;
+}
+img {border: 5px, white solid;
+    max-width: 20%;
+    height: auto;
+    /*display: flex;
+    align-items: center;*/
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10vh;}
+
+nav a{
+    color: var(--color-terciario); 
+    text-decoration: none;
+    font-size: 20px;
+}  
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 3em;
+    padding: 10px;
+}
+/* --------------------FIN HEADER--------------------- */
+/* ------------------MAIN----------------------------- */
+main{
+    min-height: 90vh;
+}
+
+/*________HERO________________ */
+/* Main .secHero .imgHero{
+    width: 100%;
+} 
+main .secHero{
+    border: 5px red solid;
+
+}
+*/
+main .secHero{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 80vh;
+    background-image: URL(https://i.pinimg.com/736x/56/76/5b/56765b337efec130a9458b278795d910.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .secHero{
+    display: flex;
+    padding: 110px;
+    color:var(--color-terciario);
+    justify-content: space-between;
+}
+main .secHero .textoHero{
+    max-width: 30%;
+    height: 40vh;
+    font-size: 25px;
+    color:var(--color-terciario);
+    justify-content: end;
+}
+/*________NOSOTROS________________ */
+
+main .nosotros{
+    max-width: 100%;
+    height: 50vh;
+    color:var(--color-cuarto);
+    background-color: var(--color-secundario);
+    }
+main .nosotros h2{
+    color:var(--color-terciario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+main .nosotros p{
+    color:var(--color-terciario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+}
+/*________CARDS________________ */
+main .adopciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 5%;
+    background-color: rgb(94, 31, 177);
+    /*border: 5px solid rgb(175, 59, 59);*/
+}
+main .adopciones h2{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    font-size: 50px;
+}
+main .card-container {
+    /*border: 10px solid #c54092;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+main .card {
+    background-color:var(--color-secundario);
+    width: 400px;
+    padding: 1em;
+    border: 10px solid var(--color-primario);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    /*transition: #4c3583 0.3s ease;
+    cursor: pointer;*/
+}
+main .card img{    
+    max-width: 70%;
+    max-height: 85%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+main .card h4{
+    color: var(--color-terciario);
+    font-size: 30px;
+}
+main .card p{
+    color: var(--color-terciario);
+    font-size: 20px;
+
+}
+main .card button{
+    width: 200px;
+    padding: 5px;
+    background-color: var(--color-primario);
+    border-radius: 20px;
+    color: var(--color-terciario);
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+/* ------------------FIN MAIN------------ */
+/* ------------------INICIO FORMULARIO------------ */
+main .secFormulario{
+    display: flex;
+    flex-direction: row;
+}
+main .secFormulario .sec1{
+    /*border:8px rgb(27, 24, 201), solid;*/
+    background-color: #963278;
+    border-radius: 15px;
+    width: 50%;
+    padding: 15px;
+    margin: 15px;
+}
+main .secFormulario .sec1 .formularioSuscripcion{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}/*
+main .secFormulario .sec1 .formularioSuscripcion .formularioContacto{    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}    */
+main .secFormulario .sec1 .formularioSuscripcion .formularioContacto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    margin: 10px;    
+}
+main .secFormulario .sec1 .formularioSuscripcion .formularioContacto label{
+    font-weight: bold;
+}
+.inputContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 18px;
+}
+.inputContainer input{
+    border: var(--color-cuarto) 1px solid;
+    border-radius: 20px;
+    padding: 5px;
+    width: 25vw;
+}
+.btn-suscribirme{
+    width: 200px;
+    padding: 5px;
+    background-color: var(--color-terciario);
+    border-radius: 20px;
+    color: var(--color-quinto);
+    margin-bottom: 10px;
+}
+
+
+main .secFormulario .sec2{
+    background-image: url(https://i.pinimg.com/736x/6e/71/61/6e7161a873c11ac722b7af08c0fa47c0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*border:8px red, solid;*/
+    max-width: 60%;
+    max-height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+main .secFormulario .sec2 .form-info{    
+    /*border:8px rgb(221, 34, 196), solid;*/
+    max-width: 60%;
+    max-height: 50%;
+    color: var(--color-terciario);
+    font-size: 25px;
+}
+
+
+/* ------------------FIN FORMULARIO------------ */
+/* ------------------FOOTER--------------------- */
+
+.Piedepagina{
+    color:var(--color-terciario);
+    background-color:var(--color-primario);
+    display: flex;
+    flex-direction: column;
+}
+.Piedepagina .grupo1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+
+}
+.Piedepagina .grupo1  h2{
+    font-size:29px;
+}
+.Piedepagina .grupo1 .interes  a{
+    color:var(--color-terciario);
+    text-decoration: none;
+}
+
+.Piedepagina .grupo1  p, a{
+    font-size:18px;
+    margin: 10px;
+}
+.Piedepagina .grupo1 .interes ul{
+    list-style-type: none;
+        margin: 10px;
+}
+.Piedepagina .grupo1 .redes .red-social{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 15%;
+}
+.Piedepagina .grupo2{
+    padding: 30px;
+    text-align: center;
+}
+.Piedepagina .grupo2 small{
+    color: var(--color-terciario);
+    font-size: 15px;
+}

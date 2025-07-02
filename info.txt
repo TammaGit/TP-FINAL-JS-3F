@@ -1,0 +1,49 @@
+ALUMNA: TAMARA RUTH FRIAS
+
+CSS EN CONSTRUCCION!!!!!!!!!!!!!!!!!!
+
+Nombre del proyecto: ADOGta
+
+Es una landing page dedicada a la adopción responsable de perritos. 
+Busca informar, sensibilizar y conectar a personas interesadas en sumar
+un nuevo integrante a su familia con perros que necesitan un hogar. 
+La página también invita a colaborar como voluntario o padrino para aquellos
+que no puedan adoptar pero deseen ayudar.
+
+¿Por qué elegí esta temática?
+La adopción de animales es un tema que me conmueve profundamente. En lugar de fomentar
+la compra, esta página busca promover el rescate y cuidado responsable. Elegí esta 
+temática porque representa una causa con impacto social real, y además me permitió 
+aplicar todos los conocimientos de desarrollo web, HTML, CSS y JavaScript que me encuentro
+aprendiendo en los curso: DESARROLLO WEB Y JAVASCRIPT impartido en el marco de Tecno 3F.
+
+
+La página está dividida en varias secciones :
+1. Encabezado (Header)
+Contiene el nombre del sitio y una barra de navegación con enlaces a las distintas secciones:
+ inicio, sobre nosotros, mascotas en adopción, y formulario de contacto.
+
+2. Sección principal (Hero + Información)
+Incluye una imagen representativa que transmite ternura y conexión con los animales, 
+junto con una descripción de quiénes somos: una organización que rescata, cuida y da en adopción
+a perros en situación de abandono.
+
+3. Cards dinámicas de adopción
+Se muestran tarjetas de perros en adopción con nombre, una breve descripción y una imagen
+obtenida desde la Dog API. 
+
+4. Formulario de contacto
+Un formulario donde el usuario puede dejar sus datos para sumarse como voluntario, padrino
+ o adoptante. Los datos son validados, y al enviarlos se muestra un mensaje de agradecimiento.
+
+5. Interactividad con JavaScript
+Alert al enviar el formulario.
+Carga de imágenes desde una API externa.
+/// Todavos no jajjaja, proximamente.....
+Cambio de color en las cards al pasar el mouse.
+Botones que cambian el fondo de la card al hacer clic (simulando adopción).
+Al pasar el mouse, la card cambia de color, y al hacer clic en
+el botón se marca como "interesado en adoptar".
+
+6. Footer
+Contiene datos de contacto, enlaces rápidos a secciones de la página y redes sociales.
