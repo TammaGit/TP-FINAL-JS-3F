@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> ADOGta</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2527/2527324.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
@@ -11,7 +12,7 @@
 <body>
     <header>
         <section class="box1">
-            <h1>ADOGta</h1>   
+            <h1>aDOGta</h1>   
         </section>
         <section class="box2">
                 <nav>
@@ -72,7 +73,13 @@
                         </div>
                         <div class="inputContainer">
                             <label for="email">Dirección de email</label>
-                            <input type="email" id="email" name="emai" placeholder="@mail.com..." required>    
+                            <input type="email" id="email" name="emai" placeholder="@mail.com..." required> 
+                            <label for="motivo">Opciones:</label>
+                            <select name="motivo" id="motivo">
+                                <option value="adoptar">Adoptar</option>
+                                <option value="apadrinar">Apadrinar</option>
+                                <option value="donar">Donar</option> 
+                            </select>
                         </div>
                         <input type="submit" value="Enviar" class="btn-suscribirme" id="btn-enviar">
                     </form>

@@ -39,7 +39,7 @@ Un formulario donde el usuario puede dejar sus datos para sumarse como voluntari
 5. Interactividad con JavaScript
 Alert al enviar el formulario.
 Carga de imágenes desde una API externa.
-/// Todavos no jajjaja, proximamente.....
+/// Todavia no jajjaja, proximamente.....
 Cambio de color en las cards al pasar el mouse.
 Botones que cambian el fondo de la card al hacer clic (simulando adopción).
 Al pasar el mouse, la card cambia de color, y al hacer clic en
