@@ -8,25 +8,45 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+/*
 :root{
-    --color-primario:#5f33d8;
-    --color-secundario:#c0b233;
+    --color-primario:#48426d;
+    --color-secundario: rgb(165, 154, 2);
     --color-terciario:#f3f4f5;
     --color-cuarto:#070707;
     --color-quinto:#9e277a;
 }
-/* ----------------------------HEADER--------------------- */
+:root{
+    --color-primario:#001b48;
+    --color-secundario: #018abe;
+    --color-terciario:#f3f4f5;
+    --color-cuarto:#070707;
+    --color-quinto:#b5e0ee;
+}*/
+
+:root{
+    --color-primario:#0b2e59;
+    --color-secundario:#87cefa;
+    --color-terciario:#3f83b7;
+    --color-cuarto:#c3d5db;
+    --color-quinto:#e0eff2;
+    --color-sexto: white;
+
+}
+/* ----------------------------HEADER------------------------------------------ */
 header .box1 h1{
 font-family: "Edu NSW ACT Cursive", cursive;
 font-optical-sizing: auto;
 font-weight: <weight>;
 font-style: normal;
-font-size: 70px;
 }
 
+body{
+    background-color: var(--color-quinto);
+}
 header{
     background-color: var(--color-primario);
-    color: var(--color-terciario); 
+    color: var(--color-sexto); 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,15 +72,45 @@ nav {
     gap: 10vh;}
 
 nav a{
-    color: var(--color-terciario); 
+    color: var(--color-sexto); 
     text-decoration: none;
     font-size: 20px;
 }  
+
 nav ul{
     list-style-type: none;
     display: flex;
     gap: 3em;
     padding: 10px;
+}
+
+.btn-iniciar-sesion{
+    background-color: transparent;
+    border: var(--color-secundario) 3px solid;
+    color: var(--color-secundario);
+    border-radius: 14px;
+    width: 7vw;
+    height: 4vh;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.btn-iniciar-sesion:hover{
+    background-color: var(--color-secundario);
+    color: white;
+}
+.btn-registrarse{
+    background-color: transparent;
+    border: var(--color-secundario) 3px solid;
+    color: var(--color-secundario);
+    border-radius: 14px;
+    width: 7vw;
+    height: 4vh;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.btn-registrarse:hover{
+    background-color: var(--color-secundario);
+    color: white;
 }
 /* --------------------FIN HEADER--------------------- */
 /* ------------------MAIN----------------------------- */
@@ -91,14 +141,14 @@ main .secHero{
 main .secHero{
     display: flex;
     padding: 110px;
-    color:var(--color-terciario);
+    color:var(--color-sexto);
     justify-content: space-between;
 }
 main .secHero .textoHero{
     max-width: 30%;
     height: 40vh;
     font-size: 25px;
-    color:var(--color-terciario);
+    color:var(--color-sexto);
     justify-content: end;
 }
 /*________NOSOTROS________________ */
@@ -106,18 +156,18 @@ main .secHero .textoHero{
 main .nosotros{
     max-width: 100%;
     height: 50vh;
-    color:var(--color-cuarto);
-    background-color: var(--color-secundario);
+    color:var(--color-sexto);
+    background-color: var(--color-terciario);
     }
 main .nosotros h2{
-    color:var(--color-terciario);
+    color:var(--color-sexto);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 main .nosotros p{
-    color:var(--color-terciario);
+    color:var(--color-sexto);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,10 +181,11 @@ main .adopciones{
     align-items: center;
     margin-top: 30px;
     margin-bottom: 5%;
-    background-color: rgb(94, 31, 177);
-    /*border: 5px solid rgb(175, 59, 59);*/
+   /* background-color: rgb(94, 31, 177);
+    border: 5px solid rgb(175, 59, 59);*/
 }
 main .adopciones h2{
+    color: var(--color-primario);
     display: flex;
     align-items: center;
     margin: 30px;
@@ -149,7 +200,7 @@ main .card-container {
 }
 
 main .card {
-    background-color:var(--color-secundario);
+    background-color:var(--color-terciario);
     width: 400px;
     padding: 1em;
     border: 10px solid var(--color-primario);
@@ -168,11 +219,11 @@ main .card img{
     justify-content: center;
 }
 main .card h4{
-    color: var(--color-terciario);
+    color: var(--color-sexto);
     font-size: 30px;
 }
 main .card p{
-    color: var(--color-terciario);
+    color: var(--color-sexto);
     font-size: 20px;
 
 }
@@ -181,7 +232,7 @@ main .card button{
     padding: 5px;
     background-color: var(--color-primario);
     border-radius: 20px;
-    color: var(--color-terciario);
+    color: var(--color-sexto);
     margin-top: 20px;
     display: flex;
     align-content: center;
@@ -198,7 +249,7 @@ main .secFormulario{
 }
 main .secFormulario .sec1{
     /*border:8px rgb(27, 24, 201), solid;*/
-    background-color: #963278;
+    background-color: var(--color-cuarto);
     border-radius: 15px;
     width: 50%;
     padding: 15px;
@@ -235,7 +286,7 @@ main .secFormulario .sec1 .formularioSuscripcion .formularioContacto label{
     font-size: 18px;
 }
 .inputContainer input{
-    border: var(--color-cuarto) 1px solid;
+    border: var(--color-sexto) 1px solid;
     border-radius: 20px;
     padding: 5px;
     width: 25vw;
@@ -243,7 +294,7 @@ main .secFormulario .sec1 .formularioSuscripcion .formularioContacto label{
 .btn-suscribirme{
     width: 200px;
     padding: 5px;
-    background-color: var(--color-terciario);
+    background-color: var(--color-sexto);
     border-radius: 20px;
     color: var(--color-quinto);
     margin-bottom: 10px;
@@ -267,7 +318,7 @@ main .secFormulario .sec2 .form-info{
     /*border:8px rgb(221, 34, 196), solid;*/
     max-width: 60%;
     max-height: 50%;
-    color: var(--color-terciario);
+    color: var(--color-sexto);
     font-size: 25px;
 }
 
@@ -276,7 +327,7 @@ main .secFormulario .sec2 .form-info{
 /* ------------------FOOTER--------------------- */
 
 .Piedepagina{
-    color:var(--color-terciario);
+    color:var(--color-sexto);
     background-color:var(--color-primario);
     display: flex;
     flex-direction: column;
@@ -292,7 +343,7 @@ main .secFormulario .sec2 .form-info{
     font-size:29px;
 }
 .Piedepagina .grupo1 .interes  a{
-    color:var(--color-terciario);
+    color:var(--color-sexto);
     text-decoration: none;
 }
 
@@ -315,6 +366,6 @@ main .secFormulario .sec2 .form-info{
     text-align: center;
 }
 .Piedepagina .grupo2 small{
-    color: var(--color-terciario);
+    color: var(--color-cuarto);
     font-size: 15px;
 }
