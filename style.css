@@ -85,9 +85,10 @@ nav ul{
 }
 
 .btn-iniciar-sesion{
-    background-color: transparent;
-    border: var(--color-secundario) 3px solid;
-    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    font-size: 15px;
+    border: var(--color-cuarto) 3px solid;
+    color: var(--color-quinto);
     border-radius: 14px;
     width: 7vw;
     height: 4vh;
@@ -99,9 +100,10 @@ nav ul{
     color: white;
 }
 .btn-registrarse{
-    background-color: transparent;
-    border: var(--color-secundario) 3px solid;
-    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    font-size: 15px;
+    border: var(--color-cuarto) 3px solid;
+    color: var(--color-quinto);
     border-radius: 14px;
     width: 7vw;
     height: 4vh;
@@ -149,7 +151,8 @@ main .secHero .textoHero{
     height: 40vh;
     font-size: 25px;
     color:var(--color-sexto);
-    justify-content: end;
+    padding-top: 60px;
+    text-align: right;
 }
 /*________NOSOTROS________________ */
 
@@ -158,8 +161,13 @@ main .nosotros{
     height: 50vh;
     color:var(--color-sexto);
     background-color: var(--color-terciario);
+    border-radius: 15px;
+    margin: 25px;
+    padding: 50px;
     }
 main .nosotros h2{
+    font-size: 35px;
+    font-weight: bolder;
     color:var(--color-sexto);
     display: flex;
     align-items: center;
@@ -168,11 +176,13 @@ main .nosotros h2{
 }
 main .nosotros p{
     color:var(--color-sexto);
+    font-weight: lighter;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 /*________CARDS________________ */
 main .adopciones{
@@ -185,7 +195,10 @@ main .adopciones{
     border: 5px solid rgb(175, 59, 59);*/
 }
 main .adopciones h2{
-    color: var(--color-primario);
+    color: var(--color-sexto);
+    background-color: var(--color-primario);
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     margin: 30px;
@@ -203,7 +216,7 @@ main .card {
     background-color:var(--color-terciario);
     width: 400px;
     padding: 1em;
-    border: 10px solid var(--color-primario);
+    border: 6px solid var(--color-primario);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -213,6 +226,7 @@ main .card {
 main .card img{    
     max-width: 70%;
     max-height: 85%;
+    border: 4px var(--color-quinto) solid; 
     border-radius: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -260,7 +274,8 @@ main .secFormulario .sec1 .formularioSuscripcion{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    color:var(--color-primario);
+    font-weight: bold;
 }/*
 main .secFormulario .sec1 .formularioSuscripcion .formularioContacto{    
     display: flex;
@@ -277,6 +292,7 @@ main .secFormulario .sec1 .formularioSuscripcion .formularioContacto{
 }
 main .secFormulario .sec1 .formularioSuscripcion .formularioContacto label{
     font-weight: bold;
+    color:var(--color-primario);
 }
 .inputContainer{
     width: 100%;
@@ -286,7 +302,7 @@ main .secFormulario .sec1 .formularioSuscripcion .formularioContacto label{
     font-size: 18px;
 }
 .inputContainer input{
-    border: var(--color-sexto) 1px solid;
+    border:2px var(--color-terciario) solid;
     border-radius: 20px;
     padding: 5px;
     width: 25vw;
@@ -294,21 +310,33 @@ main .secFormulario .sec1 .formularioSuscripcion .formularioContacto label{
 .btn-suscribirme{
     width: 200px;
     padding: 5px;
-    background-color: var(--color-sexto);
+    background-color: var(--color-terciario);
     border-radius: 20px;
+    border: 3px var(--color-primario) solid;
     color: var(--color-quinto);
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-
+.inputContainer .motivo{
+    border:2px var(--color-terciario) solid;
+    border-radius: 20px;
+    padding: 5px;
+    width: 25vw;
+}
+/*________IMAGEN FORMULARIO_____*/
 main .secFormulario .sec2{
+        width: 50%;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15PX;
     background-image: url(https://i.pinimg.com/736x/6e/71/61/6e7161a873c11ac722b7af08c0fa47c0.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     /*border:8px red, solid;*/
-    max-width: 60%;
-    max-height: 50%;
+    /*max-width: 60%;
+    max-height: 50%;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,8 +344,10 @@ main .secFormulario .sec2{
 }
 main .secFormulario .sec2 .form-info{    
     /*border:8px rgb(221, 34, 196), solid;*/
-    max-width: 60%;
-    max-height: 50%;
+    /*max-width: 60%;
+    max-height: 50%;*/
+    text-align: center;
+    padding: 55px;
     color: var(--color-sexto);
     font-size: 25px;
 }
@@ -360,6 +390,9 @@ main .secFormulario .sec2 .form-info{
     justify-content: space-between;
     gap: 40px;
     padding-top: 15%;
+}
+.Piedepagina .grupo1 .redes .red-social i:hover {
+    color:lightskyblue;
 }
 .Piedepagina .grupo2{
     padding: 30px;
